@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vasu Dadhaniya — Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-canvas">
+  <div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div>
+</div>
+<div class="bg-grid"></div>
+
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mobNav">
+  <a href="#about"      onclick="cm()">About</a>
+  <a href="#experience" onclick="cm()">Experience</a>
+  <a href="#projects"   onclick="cm()">Projects</a>
+  <a href="#education"  onclick="cm()">Education</a>
+  <a href="#contact"    onclick="cm()">Contact</a>
+  <button class="mob-dl-btn" onclick="dlCV();cm()">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download CV
+  </button>
+</div>
+
+<!-- NAV -->
+<nav id="nb">
+  <div class="nav-logo"><div class="logo-dot"></div>Vasu Dadhaniya</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button class="btn-nav-dl" onclick="dlCV()">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </button>
+    </li>
+  </ul>
+  <div class="hamburger" id="hbg" onclick="tm()"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge"><div class="bdot"></div>Ahmedabad, India</div>
+  <h1 class="hero-title">
+    Data<br>
+    <span class="grad-text">Analyst</span><br>
+    <span class="outline">&amp; Developer</span>
+  </h1>
+  <p class="hero-sub">Hi, I'm <strong>Vasu Dadhaniya</strong> — turning complex datasets into <strong>clear business insights</strong> using Python, Power BI, SQL, and full-stack web development.</p>
+  <div class="hero-cta">
+    <button class="btn-dl" onclick="dlCV()">
+      <div class="dl-icon"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+      Download CV
+    </button>
+    <a href="#projects" class="btn-ghost">View Projects <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://github.com/vasu-dadhnaiya" target="_blank" class="btn-ghost">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      GitHub
+    </a>
+  </div>
+  <div class="hero-stats">
+    <div class="hstat"><div class="sval" data-target="6" data-suffix="+">6+</div><div class="slbl">Projects Built</div></div>
+    <div class="hstat"><div class="sval" data-target="3" data-suffix="+">3+</div><div class="slbl">Certifications</div></div>
+    <div class="hstat"><div class="sval" data-target="2" data-suffix="+">2+</div><div class="slbl">Yrs Experience</div></div>
+    <div class="hstat"><div class="sval" data-target="5" data-suffix="+">5+</div><div class="slbl">Tech Stacks</div></div>
+  </div>
+  <div class="scroll-cue"><div class="sc-mouse"><div class="sc-wheel"></div></div><span class="sc-lbl">Scroll</span></div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="eyebrow reveal"><span class="enum">01</span><div class="eline"></div></div>
+  <h2 class="stitle reveal">About <span class="accent">Me</span></h2>
+  <div class="about-grid">
+    <div class="rl">
+      <p class="atext">I'm a <strong>detail-oriented IT undergraduate</strong> at Silver Oak University pursuing B.Voc in IT &amp; ITES. I specialize in transforming raw, messy datasets into actionable business intelligence.</p>
+      <p class="atext">With hands-on experience at <strong>Cognifyz Technologies</strong> as a Data Analyst Intern, I've worked on restaurant and real estate datasets — performing EDA, building dashboards, and delivering data-driven recommendations.</p>
+      <p class="atext">Beyond analytics, I build full-stack web apps with <strong>Django &amp; Python</strong>, and enjoy crafting clean frontend experiences with HTML, CSS &amp; JavaScript.</p>
+      <div class="about-meta">
+        <div class="mitem"><label>Location</label><span>Ahmedabad, Gujarat 🇮🇳</span></div>
+        <div class="mitem"><label>Email</label><span><a href="mailto:vasuaa4@gmail.com">vasuaa4@gmail.com</a></span></div>
+        <div class="mitem"><label>Phone</label><span>+91 9106084329</span></div>
+        <div class="mitem"><label>Status</label><span style="color:var(--teal)">● Open to Work</span></div>
+        <div class="mitem"><label>GitHub</label><span><a href="https://github.com/vasu-dadhnaiya" target="_blank">vasu-dadhnaiya ↗</a></span></div>
+        <div class="mitem"><label>LinkedIn</label><span><a href="https://linkedin.com/in/vasu-dadhaniya-6b5198283" target="_blank">vasu-dadhaniya ↗</a></span></div>
+      </div>
+    </div>
+    <div class="skills-side rr">
+      <div class="sg d1"><div class="sg-lbl">⚡ Core Technical</div><div class="chips"><span class="chip ct">Python</span><span class="chip ct">Pandas</span><span class="chip ct">SQL</span><span class="chip ct">Power BI</span><span class="chip ct">EDA</span><span class="chip ct">Data Cleaning</span></div></div>
+      <div class="sg d2"><div class="sg-lbl">📊 Visualization</div><div class="chips"><span class="chip cb">Matplotlib</span><span class="chip cb">Seaborn</span><span class="chip cb">Excel</span><span class="chip cb">Jupyter Notebook</span></div></div>
+      <div class="sg d3"><div class="sg-lbl">🌐 Web Dev</div><div class="chips"><span class="chip cm">Django</span><span class="chip cm">HTML &amp; CSS</span><span class="chip cm">JavaScript</span><span class="chip cm">Bootstrap</span><span class="chip cm">SQLite</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="eyebrow reveal"><span class="enum">02</span><div class="eline"></div></div>
+  <h2 class="stitle reveal">Work <span class="accent">Experience</span></h2>
+  <div class="xtl">
+    <div class="xi reveal d1">
+      <div class="xdot-col"><div class="xdot"></div></div>
+      <div class="xcard">
+        <div class="xhead"><div class="xco">Ask Datatech</div><span class="xdate">2025 – Present</span></div>
+        <div class="xrole">Data Operator · Canada &amp; Remote</div>
+        <ul class="xpts">
+          <li>Manual data entry across Excel, Google Sheets, and CRM platforms</li>
+          <li>PDF/Image to Word/Excel conversion and document management</li>
+          <li>eCommerce product data entry, cleaning &amp; formatting workflows</li>
+          <li>Web research, data collection, and typing tasks</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xi reveal d2">
+      <div class="xdot-col"><div class="xdot" style="border-color:var(--blue);box-shadow:0 0 12px rgba(56,189,248,.45)"></div></div>
+      <div class="xcard">
+        <div class="xhead"><div class="xco">Cognifyz Technologies</div><span class="xdate">Jan–Feb 2026</span></div>
+        <div class="xrole">Data Analyst Intern · Remote</div>
+        <ul class="xpts">
+          <li>Data cleaning &amp; preprocessing on structured datasets using Python &amp; Pandas</li>
+          <li>Conducted EDA to identify trends, patterns, and key business insights</li>
+          <li>Created visualizations using Matplotlib and Seaborn for executive reporting</li>
+          <li>Analyzed restaurant and real estate datasets for pricing &amp; performance insights</li>
+          <li>Improved dataset quality by resolving missing values, duplicates, and inconsistencies</li>
+        </ul>
+      </div>
+    </div>
+    <div class="xi reveal d3">
+      <div class="xdot-col"><div class="xdot" style="border-color:var(--pink);box-shadow:0 0 12px rgba(244,114,182,.45)"></div></div>
+      <div class="xcard">
+        <div class="xhead"><div class="xco">Apaji &amp; Amin</div><span class="xdate">Dec 2023 – Sep 2024</span></div>
+        <div class="xrole">GST Filing &amp; Tax Portal · Ahmedabad</div>
+        <ul class="xpts">
+          <li>Handled end-to-end GST filing and uploaded returns to the government tax portal</li>
+          <li>Managed compliance documentation and resolved portal submission errors</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="eyebrow reveal"><span class="enum">03</span><div class="eline"></div></div>
+  <h2 class="stitle reveal">Featured <span class="accent">Projects</span></h2>
+  <div class="pgrid">
+    <a class="pcard reveal d1" href="https://github.com/vasu-dadhnaiya/Restaurant-Data-Analysis/tree/master" target="_blank">
+      <div class="phead"><div class="picon">🍽️</div><span class="parrow">↗</span></div>
+      <div class="ptitle">Restaurant Data Analysis</div>
+      <div class="pdesc">Deep analysis on restaurant dataset extracting business insights on ratings, pricing, cuisines, and customer behavior. Identified high-demand cuisines and top revenue segments.</div>
+      <div class="pstack"><span class="spill">Python</span><span class="spill">Pandas</span><span class="spill">Matplotlib</span><span class="spill">Seaborn</span></div>
+    </a>
+    <a class="pcard reveal d2" href="https://github.com/vasu-dadhnaiya/-Gurgaon-Real-Estate-Market-Analysis" target="_blank">
+      <div class="phead"><div class="picon">🏙️</div><span class="parrow">↗</span></div>
+      <div class="ptitle">Gurgaon Real Estate Analysis</div>
+      <div class="pdesc">Analyzed property dataset for pricing trends, locality comparison, and investment patterns. Calculated rate per sq. ft by locality and evaluated RERA-approval pricing impact.</div>
+      <div class="pstack"><span class="spill">Python</span><span class="spill">Jupyter</span><span class="spill">Pandas</span><span class="spill">Seaborn</span></div>
+    </a>
+    <a class="pcard reveal d3" href="https://github.com/vasu-dadhnaiya/OLA-Data-Analyst-Project" target="_blank">
+      <div class="phead"><div class="picon">🚗</div><span class="parrow">↗</span></div>
+      <div class="ptitle">OLA Customer Behavior Analysis</div>
+      <div class="pdesc">Power BI dashboard analyzing OLA ride dataset for customer behavior trends, demand patterns, and operational insights with interactive visualizations.</div>
+      <div class="pstack"><span class="spill">Power BI</span><span class="spill">SQL</span><span class="spill">Excel</span></div>
+    </a>
+    <a class="pcard reveal d1" href="https://github.com/vasu-dadhnaiya/Production-Hours-Analysis" target="_blank">
+      <div class="phead"><div class="picon">📊</div><span class="parrow">↗</span></div>
+      <div class="ptitle">Production Hours Analysis</div>
+      <div class="pdesc">SQL &amp; Power BI analysis of production hours data to identify efficiency patterns, resource allocation gaps, and optimize manufacturing workflows.</div>
+      <div class="pstack"><span class="spill">SQL</span><span class="spill">Power BI</span></div>
+    </a>
+    <a class="pcard reveal d2" href="https://github.com/vasu-dadhnaiya/Restaurant-Booking-Project" target="_blank">
+      <div class="phead"><div class="picon">🗓️</div><span class="parrow">↗</span></div>
+      <div class="ptitle">Restaurant Booking System</div>
+      <div class="pdesc">Full-stack web app with user authentication and table reservation system. Complete frontend UI, backend logic, database management, and booking features.</div>
+      <div class="pstack"><span class="spill">Django</span><span class="spill">Python</span><span class="spill">SQLite</span><span class="spill">Bootstrap</span></div>
+    </a>
+    <a class="pcard reveal d3" href="https://github.com/vasu-dadhnaiya/Netflix-Clone/tree/master" target="_blank">
+      <div class="phead"><div class="picon">🎬</div><span class="parrow">↗</span></div>
+      <div class="ptitle">Netflix Clone</div>
+      <div class="pdesc">Pixel-perfect responsive Netflix UI clone built with pure HTML &amp; CSS, replicating the streaming platform's layout, navigation, and visual identity.</div>
+      <div class="pstack"><span class="spill">HTML</span><span class="spill">CSS</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="eyebrow reveal"><span class="enum">04</span><div class="eline"></div></div>
+  <h2 class="stitle reveal">Education &amp; <span class="accent">Certifications</span></h2>
+  <div class="edgrid">
+    <div>
+      <div class="edsub reveal">🎓 Academic Background</div>
+      <div class="edcard reveal d1"><div class="eddeg">B.Voc in Information Technology (IT&amp;ITES)</div><div class="edsch">Silver Oak University, Ahmedabad</div><div class="edyr">2023 – 2026 · Currently Pursuing</div></div>
+      <div class="edcard reveal d2"><div class="eddeg">12th Commerce</div><div class="edsch">Unique School</div><div class="edyr">March 2023 · 76% Score</div></div>
+    </div>
+    <div>
+      <div class="edsub reveal">🏆 Certifications</div>
+      <div class="ccard reveal d1"><div class="cicn c1">🐍</div><div><div class="cnm">Python Basics</div><div class="ciss">Great Learning</div></div></div>
+      <div class="ccard reveal d2"><div class="cicn c2">📈</div><div><div class="cnm">Data Analytics</div><div class="ciss">Simplilearn</div></div></div>
+      <div class="ccard reveal d3"><div class="cicn c3">🏅</div><div><div class="cnm">Data Analyst Internship Certificate</div><div class="ciss">Cognifyz Technologies</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="cglow"></div>
+  <div class="cinner">
+    <h2 class="ctitle reveal">Let's Build<br>Something <span class="grd">Great</span></h2>
+    <p class="csub reveal">Open to data analyst roles, internships, and freelance projects. Whether you need dashboards, EDA, or full-stack solutions — let's connect.</p>
+    <div class="cdl-wrap reveal">
+      <button class="btn-dl" style="font-size:1rem;padding:1rem 2.5rem;" onclick="dlCV()">
+        <div class="dl-icon" style="width:24px;height:24px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></div>
+        Download My CV
+      </button>
+    </div>
+    <div class="cbtnrow reveal d2">
+      <a href="mailto:vasuaa4@gmail.com" class="clink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>vasuaa4@gmail.com</a>
+      <a href="https://github.com/vasu-dadhnaiya" target="_blank" class="clink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>GitHub</a>
+      <a href="https://linkedin.com/in/vasu-dadhaniya-6b5198283" target="_blank" class="clink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+      <a href="tel:+919106084329" class="clink"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 9106084329</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <span>© 2026 Vasu Dadhaniya. Built with passion.</span>
+  <a href="https://github.com/vasu-dadhnaiya" target="_blank">github.com/vasu-dadhnaiya ↗</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
